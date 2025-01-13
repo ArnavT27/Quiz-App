@@ -1,0 +1,60 @@
+body{
+    background-color: rgb(2, 5, 86);
+}
+*{
+    font-family: sans-serif;
+}
+.app{
+    margin: 100px auto 0;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+}
+.app h1{
+    border-bottom: 1px solid rgb(2, 5, 86);
+    padding-bottom: 20px;
+    font-size: 32px;
+}
+.app p{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.btn{
+    width: 100%;
+    text-align: left;
+    background-color: white;
+    margin:10px 0 10px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid black;
+    transition: all 0.3s;
+    padding-left: 15px;
+    cursor: pointer;
+}
+.options button:hover{
+    background-color: black;
+    color: white;
+}
+.next,.play{
+    height: 40px;
+    width: 100px;
+    margin: 10px auto 0;
+    border-radius: 10px;
+    background-color: rgb(2, 5, 86);
+    color: white;
+    display: block;
+    border: 0;
+    cursor: pointer;
+    display:none;
+}
+.correct-button{
+    background-color: rgb(79, 186, 79);
+    color: white;
+}
+.wrong-button{
+    background-color: rgb(172, 70, 70);
+    color: white;
+}
