@@ -1,5 +1,5 @@
 'use strict';
-const apitoken=`xTTN0cy0DbATwuqb7y5LoNAbBC1w6qrhe1Pd96HA`;
+let apitoken;
 const curl=`https://quizapi.io/api/v1/questions?apiKey=${apitoken}`;
 const question=document.querySelector('.ques');
 const answerButton=document.querySelector('.options');
