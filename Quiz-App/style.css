@@ -50,11 +50,3 @@ body{
     cursor: pointer;
     display:none;
 }
-.correct-button{
-    background-color: rgb(79, 186, 79);
-    color: white;
-}
-.wrong-button{
-    background-color: rgb(172, 70, 70);
-    color: white;
-}
