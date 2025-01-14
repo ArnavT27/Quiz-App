@@ -7,6 +7,33 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="starter">
+      <div class="type">
+        <p>Type of Question:</p>
+        <input type="radio" value="Linux" name="a" />Linux
+        <input type="radio" value="DevOps" name="a" />DevOps
+        <input type="radio" value="Code" name="a" />Programming
+        <input type="radio" value="Docker" name="a" />Docker
+        <input type="radio" value="React" name="a" />React
+        <input type="radio" value="Next.js" name="a" />Next.js
+        <input type="radio" value="Django" name="a" />Django
+      </div>
+      <div class="number">
+        <p>Number of Question:</p>
+        <input type="radio" value="5" name="numbers" />5
+        <input type="radio" value="10" name="numbers" />10
+        <input type="radio" value="15" name="numbers" />15
+        <input type="radio" value="20" name="numbers" />20
+      </div>
+      <div class="difficulty">
+        <p>Difficulty:</p>
+        <input type="radio" value="Easy" name="c" />Easy
+        <input type="radio" value="Medium" name="c" />Medium
+        <input type="radio" value="Hard" name="c" />Hard
+      </div>
+      <button class="startingButton">Start</button>
+    </div>
+
     <div class="app">
       <h1>Quiz</h1>
       <p class="ques">Loading...</p>
@@ -16,6 +43,7 @@
         <button class="btn btn3">Answer 3</button>
         <button class="btn btn4">Answer 4</button> -->
       </div>
+      <!-- <button class="start">Start</button> -->
       <button class="next">Next</button>
       <button class="play">Play Again</button>
     </div>
