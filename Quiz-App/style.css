@@ -4,13 +4,119 @@ body{
 *{
     font-family: sans-serif;
 }
+.starter {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  
+  .type, .number, .difficulty {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+  }
+  
+  /* Section titles */
+  .type p, .number p, .difficulty p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+  
+  .type input[type="radio"],
+  .number input[type="radio"],
+  .difficulty input[type="radio"] {
+    margin-right: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .type input[type="radio"] + label,
+  .number input[type="radio"] + label,
+  .difficulty input[type="radio"] + label {
+    margin-right: 1.5rem;
+    cursor: pointer;
+  }
+  
+  
+  .next:hover,.play:hover,.startingButton:hover {
+
+    background-color: #45a049;
+  }
+  
+  .startingButton:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  /* Radio button group styling */
+  .type, .number, .difficulty {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  /* Make radio buttons and text more visually appealing */
+  input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 1.2rem;
+    height: 1.2rem;
+    border: 2px solid #4CAF50;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  input[type="radio"]:checked {
+    background-color: #4CAF50;
+    border: 2px solid #4CAF50;
+    box-shadow: inset 0 0 0 3px #fff;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .starter {
+      margin: 1rem;
+      padding: 1rem;
+    }
+    
+    .type, .number, .difficulty {
+      padding: 0.8rem;
+    }
+    
+    .startingButton {
+      padding: 0.8rem;
+    }
+  }
+  
+  /* Animation for hover effects */
+  .type:hover, .number:hover, .difficulty:hover {
+    transform: translateY(-2px);
+    transition: transform 0.2s ease;
+  }
+  
+  /* Hide button when necessary */
+  .hidden {
+    display: none;
+  }
 .app{
     margin: 100px auto 0;
     width: 90%;
-    max-width: 600px;
+    max-width: 700px;
     border-radius: 10px;
     background-color: white;
     padding: 20px;
+}
+.app{
+    max-width: 600px;
+    display: none;
 }
 .app h1{
     border-bottom: 1px solid rgb(2, 5, 86);
@@ -38,15 +144,17 @@ body{
     background-color: black;
     color: white;
 }
-.next,.play{
+.next,.play,.startingButton{
     height: 40px;
     width: 100px;
     margin: 10px auto 0;
     border-radius: 10px;
     background-color: rgb(2, 5, 86);
     color: white;
-    display: block;
+    /* display: block; */
     border: 0;
     cursor: pointer;
     display:none;
+    font-weight: bold;
+    transition: 0.3s all;
 }
